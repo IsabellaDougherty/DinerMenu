@@ -1,4 +1,10 @@
-﻿Public Class Form1
+﻿'Isabella Dougherty
+'RCET0265
+'Spring 2023
+'Diner Menu
+'https://github.com/IsabellaDougherty/DinerMenu
+
+Public Class Form1
     Dim dailySpecial As String
     Dim blob As Integer
 
