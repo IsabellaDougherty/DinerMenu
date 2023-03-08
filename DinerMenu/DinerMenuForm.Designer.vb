@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.DinerNameLabel = New System.Windows.Forms.Label()
         Me.SoupButton = New System.Windows.Forms.Button()
         Me.SaladButton = New System.Windows.Forms.Button()
@@ -29,6 +30,7 @@ Partial Class Form1
         Me.ExitButton = New System.Windows.Forms.Button()
         Me.DailySpecialLabel = New System.Windows.Forms.Label()
         Me.BlobFishPictureBox = New System.Windows.Forms.PictureBox()
+        Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.BlobFishPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -52,6 +54,7 @@ Partial Class Form1
         Me.SoupButton.Size = New System.Drawing.Size(249, 67)
         Me.SoupButton.TabIndex = 1
         Me.SoupButton.Text = "Soup"
+        Me.ToolTip.SetToolTip(Me.SoupButton, "Click this to see the soup special")
         Me.SoupButton.UseVisualStyleBackColor = False
         '
         'SaladButton
@@ -63,6 +66,7 @@ Partial Class Form1
         Me.SaladButton.Size = New System.Drawing.Size(265, 67)
         Me.SaladButton.TabIndex = 2
         Me.SaladButton.Text = "Salad"
+        Me.ToolTip.SetToolTip(Me.SaladButton, "Click this to see the salad special")
         Me.SaladButton.UseVisualStyleBackColor = False
         '
         'FishButton
@@ -74,6 +78,7 @@ Partial Class Form1
         Me.FishButton.Size = New System.Drawing.Size(250, 67)
         Me.FishButton.TabIndex = 3
         Me.FishButton.Text = "Fish"
+        Me.ToolTip.SetToolTip(Me.FishButton, "Click this to see the firsh special")
         Me.FishButton.UseVisualStyleBackColor = False
         '
         'ExitButton
@@ -81,8 +86,9 @@ Partial Class Form1
         Me.ExitButton.Location = New System.Drawing.Point(741, 9)
         Me.ExitButton.Name = "ExitButton"
         Me.ExitButton.Size = New System.Drawing.Size(47, 23)
-        Me.ExitButton.TabIndex = 5
+        Me.ExitButton.TabIndex = 4
         Me.ExitButton.Text = "Exit"
+        Me.ToolTip.SetToolTip(Me.ExitButton, "Pressing this will close the program." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         Me.ExitButton.UseVisualStyleBackColor = True
         '
         'DailySpecialLabel
@@ -132,4 +138,5 @@ Partial Class Form1
     Friend WithEvents ExitButton As Button
     Friend WithEvents DailySpecialLabel As Label
     Friend WithEvents BlobFishPictureBox As PictureBox
+    Friend WithEvents ToolTip As ToolTip
 End Class
