@@ -37,7 +37,7 @@ Partial Class Form1
         'DinerNameLabel
         '
         Me.DinerNameLabel.AutoSize = True
-        Me.DinerNameLabel.BackColor = System.Drawing.Color.Red
+        Me.DinerNameLabel.BackColor = System.Drawing.Color.LightSalmon
         Me.DinerNameLabel.Font = New System.Drawing.Font("Constantia", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.DinerNameLabel.Location = New System.Drawing.Point(106, 9)
         Me.DinerNameLabel.Name = "DinerNameLabel"
@@ -93,6 +93,8 @@ Partial Class Form1
         '
         'DailySpecialLabel
         '
+        Me.DailySpecialLabel.BackColor = System.Drawing.Color.RosyBrown
+        Me.DailySpecialLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.DailySpecialLabel.Font = New System.Drawing.Font("Constantia", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point)
         Me.DailySpecialLabel.Location = New System.Drawing.Point(12, 87)
         Me.DailySpecialLabel.Name = "DailySpecialLabel"
@@ -115,6 +117,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.IndianRed
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.BlobFishPictureBox)
         Me.Controls.Add(Me.DailySpecialLabel)
